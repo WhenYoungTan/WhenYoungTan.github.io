@@ -212,21 +212,6 @@ a {
     .border-main {
         width:90%;
     }
-    .card {
-        border-radius: 3vw;
-        padding-top: 10vw;
-        padding-bottom: 10vw;
-        border: 3px solid white;
-        background-color:#41464b;
-    }
-    .card-text{
-        border-radius: 25px;
-        margin: auto;
-        width: 70%;
-        text-align: center;
-        padding:10px;
-        border: 3px solid white;
-    }
     .columns {
         display: block;
         padding: 10px;
