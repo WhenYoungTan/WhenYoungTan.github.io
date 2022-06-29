@@ -1,0 +1,305 @@
+body {
+    background-color: black;
+    font-family: "Courier New", Times, serif;
+    color:white;
+  }
+
+h1 {
+    font-size:2vw;
+}
+
+h2 {
+    font-size:1.5vw;
+}
+
+h4 {
+    font-size:1vw;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+  }
+
+.footer-main {
+    margin: auto;
+    text-align: center;
+    padding:20px;
+}
+
+.border-main {
+    margin: auto;
+    width:70%;
+    padding: 10px;
+    position: relative;
+}
+
+.border-text {
+    border: 3px solid black;
+}
+
+/*name says it all*/
+.spacer {
+    height: 2vw;
+}
+
+.titlepadding {
+    padding-top: 12vw;
+    padding-bottom: 12vw;
+}
+
+.title {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    font-size: 6vw;
+}
+
+/*helps position multiple items in a single line*/
+.columns {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 5vw;
+    vertical-align:top;
+}
+
+.columns-card {
+    width:30%;
+}
+
+.columns-hobbies {
+    width:66%;
+}
+
+.hobbies-container {
+    vertical-align:top;
+    display: inline-block;
+}
+
+.card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px solid white;
+    background-color:black;
+}
+
+.card-text{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    padding:10px;
+}
+
+.card-text:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.card:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.vertical-line {
+    border-left: 6px solid white;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
+/*creates a dotted line effect. To be used together with vertical-line*/
+.vertical-dashed {
+    border-left: 6px dashed black;
+    z-index: 2;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: 50%;
+    top:35%;
+}
+
+.triangle-left {
+    border-right: 25px solid white;
+    margin-left: -25px;
+}
+
+.triangle-right {
+    border-left: 25px solid white;
+    margin-right: -25px;
+}
+
+.timeline-container {
+    position: relative;
+    margin: auto;
+}
+
+.timeline-card {
+    border-left: 3px solid white;
+    width:45%;
+    position: relative;
+    padding:0.5vw;
+    background-color:DarkRed;
+    margin-bottom:50px;
+}
+
+.timeline-right {
+    margin-left: 55%;
+}
+
+
+.timeline-date {
+    padding:0;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    margin-left: 10px;
+}
+
+.timeline-date-right {
+    padding:0;
+    position: absolute;
+    right: 50%;
+    top: 35%;
+    margin-right: 10px;
+}
+
+/*would align itself with the vertical line*/
+.vertical-circle {
+    position: absolute;
+    z-index: 2;
+    border: 6px solid white;
+    padding:3%;
+    left: 47%;
+    margin-left: -6px;
+    top: 35%;
+}
+
+/*to be used together with vertical-circle*/
+.vertical-img {
+    border:0;
+    z-index: 3;
+    left: 45%;
+    margin-left: 0;
+    top: 30%;
+    width:10%;
+    height:auto;
+}
+
+
+
+/*To make it mobile friendly */
+@media only screen and (max-width: 800px){
+    .title {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        font-size: 12vw;
+    }
+    h1 {
+        font-size:8vw;
+    }
+    h2 {
+        font-size:6vw;
+    }
+    h4 {
+        font-size:4vw;
+    }
+    .border-main {
+        width:90%;
+    }
+    .columns {
+        display: block;
+        padding: 10px;
+        margin-bottom: 5vw;
+        vertical-align:top;
+    }
+    .columns-card {
+        width:70%;
+        margin: auto;
+    }
+    .columns-hobbies {
+        width:100%;
+    }
+    /*Timeline page*/
+    .timeline-title {
+        font-size:5vw;
+    }
+    .timeline-desc {
+        font-size:3vw;
+    }
+    .vertical-line {
+        border-left: 1vw solid white;
+        left: 15%;
+        margin-left: 0.5vw;
+    }
+    .vertical-dashed {
+        border-left: 1vw dashed black;
+        left: 15%;
+        z-index: 2;
+        margin-left: 0.5vw;
+    }
+    .triangle{
+        border-top: 1vw solid transparent;
+        border-bottom: 1vw solid transparent;
+        left: 15%;
+    }
+
+    .triangle-left {
+        border-left: 2vw solid white;
+        margin-right: -3vw;
+        border-right:0;
+        margin-left:0;
+    }
+
+    .triangle-right {
+        border-left: 2vw solid white;
+        margin-right: -3vw;
+    }
+    .timeline-date {
+        left:0;
+        margin-left: 0;
+        padding:0;
+        font-size:2vw;
+    }
+
+    .timeline-date-right {
+        left:0;
+        margin-left: 0;
+        padding: 0;
+        font-size:2vw;
+    }
+    .timeline-card {
+        border-left: 3px solid white;
+        width:80%;
+        left: 20%;
+        position: relative;
+        padding:0.5vw;
+        background-color:DarkRed;
+        margin-bottom:50px;
+    }
+    .timeline-right {
+        margin-left: 0;
+    }
+    .vertical-circle {
+        border: 6px solid white;
+        padding:3%;
+        left: 12%;
+        margin-left: -6px;
+        top: 35%;
+    }
+
+    .vertical-img {
+        border:0;
+        z-index: 3;
+        left: 10%;
+        margin-left: 0;
+        top: 35%;
+        width:10%;
+        height:auto;
+    }
+}
